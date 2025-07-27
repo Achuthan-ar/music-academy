@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard - Music Academy</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="student-dashboard">
+  <!-- Student Header -->
+  <header class="student-header">
+    <div class="container header-container">
+      <a href="dashboard.html" class="logo">Music<span>Academy</span> Student</a>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html" class="active"><i class="fas fa-home"></i> Dashboard</a></li>
+          <li><a href="../../index.html"><i class="fas fa-globe"></i> Main Site</a></li>
+          <li><a href="#"><i class="fas fa-bell"></i></a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+          <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Student Sidebar -->
+  <aside class="student-sidebar">
+    <div class="student-profile">
+      <img src="../../assets/images/stu_profile.png" alt="Student Profile">
+      <h3>John Doe</h3>
+      <p>Violin Student</p>
+      <div class="membership-status">
+        <span class="badge premium">Premium Member</span>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+        <li><a href="courses.html"><i class="fas fa-book"></i> My Courses</a></li>
+        <li><a href="lessons.html"><i class="fas fa-play-circle"></i> Video Lessons</a></li>
+        <li><a href="practice.html"><i class="fas fa-music"></i> Practice Tools</a></li>
+        <li><a href="assignments.html"><i class="fas fa-tasks"></i> Assignments</a></li>
+        <li><a href="progress.html"><i class="fas fa-chart-line"></i> Progress</a></li>
+        <li><a href="schedule.html"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+        <li><a href="messages.html"><i class="fas fa-comments"></i> Messages</a></li>
+        <li><a href="shop.html"><i class="fas fa-shopping-cart"></i> Student Shop</a></li>
+        <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="student-main">
+    <div class="student-container">
+      <h1>Welcome Back, John!</h1>
+      <p class="welcome-message">Continue your musical journey with these updates and resources.</p>
+      
+      <!-- Student Stats -->
+      <div class="student-stats">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="stat-info">
+            <h3>Active Courses</h3>
+            <p>2</p>
+            <a href="courses.html">View Courses</a>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <div class="stat-info">
+            <h3>Upcoming Lessons</h3>
+            <p>3</p>
+            <a href="schedule.html">View Schedule</a>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <div class="stat-info">
+            <h3>Pending Assignments</h3>
+            <p>1</p>
+            <a href="assignments.html">View Assignments</a>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="stat-info">
+            <h3>Achievements</h3>
+            <p>5</p>
+            <a href="progress.html">View Progress</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Current Courses -->
+      <div class="dashboard-section">
+        <h2>Your Current Courses</h2>
+        <div class="course-cards">
+          <div class="course-card">
+            <div class="course-img">
+              <img src="../../assets/images/violin_1.png" alt="Violin Intermediate">
+              <div class="progress-bar">
+                <div class="progress" style="width: 65%"></div>
+              </div>
+              <div class="progress-text">65% Complete</div>
+            </div>
+            <div class="course-info">
+              <h3>Violin Intermediate</h3>
+              <p class="instructor">Instructor: Sarah Johnson</p>
+              <p class="next-lesson">Next Lesson: Shifting to 3rd Position</p>
+              <div class="course-actions">
+                <a href="#" class="btn btn-small">Continue Learning</a>
+                <a href="#" class="btn btn-small btn-outline">Course Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="course-card">
+            <div class="course-img">
+              <img src="../../assets/images/violin_1.png" alt="Music Theory">
+              <div class="progress-bar">
+                <div class="progress" style="width: 30%"></div>
+              </div>
+              <div class="progress-text">30% Complete</div>
+            </div>
+            <div class="course-info">
+              <h3>Music Theory Fundamentals</h3>
+              <p class="instructor">Instructor: Emma Rodriguez</p>
+              <p class="next-lesson">Next Lesson: Chord Progressions</p>
+              <div class="course-actions">
+                <a href="#" class="btn btn-small">Continue Learning</a>
+                <a href="#" class="btn btn-small btn-outline">Course Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Upcoming Schedule -->
+      <div class="dashboard-section">
+        <h2>Upcoming Schedule</h2>
+        <div class="schedule-list">
+          <div class="schedule-item">
+            <div class="schedule-date">
+              <div class="day">Wed</div>
+              <div class="date">15</div>
+            </div>
+            <div class="schedule-details">
+              <h3>Violin Lesson with Sarah</h3>
+              <p><i class="fas fa-clock"></i> 4:00 PM - 5:00 PM</p>
+              <p><i class="fas fa-video"></i> Online via Zoom</p>
+            </div>
+            <div class="schedule-actions">
+              <a href="#" class="btn btn-small">Join Lesson</a>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-date">
+              <div class="day">Fri</div>
+              <div class="date">17</div>
+            </div>
+            <div class="schedule-details">
+              <h3>Music Theory Class</h3>
+              <p><i class="fas fa-clock"></i> 6:00 PM - 7:30 PM</p>
+              <p><i class="fas fa-map-marker-alt"></i> Downtown Center</p>
+            </div>
+            <div class="schedule-actions">
+              <a href="#" class="btn btn-small btn-outline">View Details</a>
+            </div>
+          </div>
+          <div class="schedule-item">
+            <div class="schedule-date">
+              <div class="day">Mon</div>
+              <div class="date">20</div>
+            </div>
+            <div class="schedule-details">
+              <h3>Violin Lesson with Sarah</h3>
+              <p><i class="fas fa-clock"></i> 4:00 PM - 5:00 PM</p>
+              <p><i class="fas fa-video"></i> Online via Zoom</p>
+            </div>
+            <div class="schedule-actions">
+              <a href="#" class="btn btn-small btn-outline">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="schedule.html" class="btn">View Full Schedule</a>
+        </div>
+      </div>
+      
+      <!-- Practice Tools -->
+      <div class="dashboard-section">
+        <h2>Practice Tools</h2>
+        <div class="practice-tools">
+          <div class="tool-card">
+            <div class="tool-icon">
+              <i class="fas fa-sliders-h"></i>
+            </div>
+            <div class="tool-info">
+              <h3>Tambura Drone</h3>
+              <p>Adjustable tambura sound in 12 different scales for practice.</p>
+              <a href="practice.html#tambura" class="btn btn-small">Open Tool</a>
+            </div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">
+              <i class="fas fa-microphone-alt"></i>
+            </div>
+            <div class="tool-info">
+              <h3>Swaram Practice</h3>
+              <p>Recorded swaram exercises to improve pitch and tonal quality.</p>
+              <a href="practice.html#swaram" class="btn btn-small">Open Tool</a>
+            </div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">
+              <i class="fas fa-compact-disc"></i>
+            </div>
+            <div class="tool-info">
+              <h3>Recording Studio</h3>
+              <p>Record your practice sessions and get feedback from instructors.</p>
+              <a href="practice.html#recording" class="btn btn-small">Open Tool</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Recent Activity -->
+      <div class="dashboard-section">
+        <h2>Recent Activity</h2>
+        <div class="activity-list">
+          <div class="activity-item">
+            <div class="activity-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="activity-content">
+              <p>Completed <strong>Lesson 12: Vibrato Basics</strong> in Violin Intermediate course</p>
+              <span class="activity-time">2 days ago</span>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="activity-content">
+              <p>Received <strong>5-star rating</strong> on your latest assignment submission</p>
+              <span class="activity-time">3 days ago</span>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-icon">
+              <i class="fas fa-comment"></i>
+            </div>
+            <div class="activity-content">
+              <p>New feedback from <strong>Instructor Sarah</strong> on your recording</p>
+              <span class="activity-time">4 days ago</span>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-icon">
+              <i class="fas fa-gift"></i>
+            </div>
+            <div class="activity-content">
+              <p>Unlocked <strong>Scale Master Badge</strong> for completing all scale exercises</p>
+              <span class="activity-time">1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

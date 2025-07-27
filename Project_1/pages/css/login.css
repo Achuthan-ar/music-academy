@@ -1,0 +1,72 @@
+ /* Additional Styles for Validation */
+    .required {
+      color: #e91e63;
+    }
+    
+    .error-message {
+      color: #e91e63;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    
+    input.error {
+      border-color: #e91e63;
+    }
+    
+    .social-login {
+      margin-top: 30px;
+      text-align: center;
+    }
+    
+    .social-login p {
+      margin-bottom: 15px;
+      color: #666;
+    }
+    
+    .social-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .social-btn {
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    
+    .social-btn.facebook {
+      background: #3b5998;
+      color: white;
+    }
+    
+    .social-btn.google {
+      background: #db4437;
+      color: white;
+    }
+    
+    .social-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+    
+    .social-btn i {
+      margin-right: 8px;
+    }
+    
+    .register-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .login-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .login-img {
+        height: 200px;
+      }
+    }

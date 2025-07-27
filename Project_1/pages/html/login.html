@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Music Academy</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <a href="../../index.html" class="logo">Music<span>Academy</span></a>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="nearby-centers.html">Nearby Centers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="login.html" class="btn active">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <section class="page-title">
+    <div class="container">
+      <h1>Login to Your Account</h1>
+      <p>Access your courses, services, and personalized content</p>
+    </div>
+  </section>
+
+  <!-- Login Container -->
+  <section class="section">
+    <div class="container">
+      <div class="login-container">
+        <div class="login-img">
+          <img src="../../assets/images/login.jpeg" alt="Music Education">
+        </div>
+        <div class="login-form">
+          <div class="user-type">
+            <button class="active">Student</button>
+            <button>Admin</button>
+            <button>Guest</button>
+          </div>
+          
+          <!-- Student Login Form -->
+          <form id="student-login">
+            <div class="form-group">
+              <label for="student-email">Email Address <span class="required">*</span></label>
+              <input type="email" id="student-email" required>
+              <div class="error-message" id="email-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="student-password">Password <span class="required">*</span></label>
+              <input type="password" id="student-password" required>
+              <div class="error-message" id="password-error"></div>
+            </div>
+            <div class="login-options">
+              <div>
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+              </div>
+              <a href="forgot-password.html">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+          </form>
+          
+          <!-- Admin Login Form (hidden by default) -->
+          <form id="admin-login" style="display: none;">
+            <div class="form-group">
+              <label for="admin-username">Username <span class="required">*</span></label>
+              <input type="text" id="admin-username" required>
+              <div class="error-message" id="username-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="admin-password">Password <span class="required">*</span></label>
+              <input type="password" id="admin-password" required>
+              <div class="error-message" id="admin-password-error"></div>
+            </div>
+            <div class="login-options">
+              <div>
+                <input type="checkbox" id="admin-remember">
+                <label for="admin-remember">Remember me</label>
+              </div>
+              <a href="forgot-password.html">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+          </form>
+          
+          <!-- Guest Access (no form) -->
+          <div id="guest-access" style="display: none;">
+            <p>Browse our public content without creating an account. You'll have access to:</p>
+            <ul>
+              <li><i class="fas fa-check"></i> Course overviews and sample lessons</li>
+              <li><i class="fas fa-check"></i> General information about our academy</li>
+              <li><i class="fas fa-check"></i> Service descriptions and pricing</li>
+              <li><i class="fas fa-check"></i> Public events and performances</li>
+            </ul>
+            <p>To access personalized content, student discounts, and full courses, please <a href="register.html">register as a student</a>.</p>
+            <a href="../../index.html" class="btn">Continue as Guest</a>
+          </div>
+          
+          <div class="register-link">
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+          </div>
+          
+          <div class="social-login">
+            <p>Or login with:</p>
+            <div class="social-buttons">
+              <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+              <a href="#" class="social-btn google"><i class="fab fa-google"></i> Google</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Music Academy</h3>
+          <p>Empowering musical talent through quality education and comprehensive support services.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Music Street, Melody City</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> info@musicacademy.com</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter for the latest updates and offers.</p>
+          <form>
+            <input type="email" placeholder="Your Email">
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Music Academy. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // User type switching functionality
+    document.querySelectorAll('.user-type button').forEach(button => {
+      button.addEventListener('click', function() {
+        // Update active button
+        document.querySelectorAll('.user-type button').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        this.classList.add('active');
+        
+        // Show corresponding form/section
+        const userType = this.textContent.toLowerCase();
+        
+        // Hide all forms/sections first
+        document.getElementById('student-login').style.display = 'none';
+        document.getElementById('admin-login').style.display = 'none';
+        document.getElementById('guest-access').style.display = 'none';
+        
+        // Show the selected one
+        if(userType === 'student') {
+          document.getElementById('student-login').style.display = 'block';
+        } else if(userType === 'admin') {
+          document.getElementById('admin-login').style.display = 'block';
+        } else if(userType === 'guest') {
+          document.getElementById('guest-access').style.display = 'block';
+        }
+      });
+    });
+
+    // Student Login Form Validation
+    const studentLoginForm = document.getElementById('student-login');
+    const studentEmailInput = document.getElementById('student-email');
+    const studentPasswordInput = document.getElementById('student-password');
+    const emailError = document.getElementById('email-error');
+    const passwordError = document.getElementById('password-error');
+
+    studentLoginForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Reset error messages
+      emailError.textContent = '';
+      passwordError.textContent = '';
+      studentEmailInput.classList.remove('error');
+      studentPasswordInput.classList.remove('error');
+      
+      let isValid = true;
+      
+      // Email validation
+      const email = studentEmailInput.value.trim();
+      if (!email) {
+        emailError.textContent = 'Email is required';
+        studentEmailInput.classList.add('error');
+        isValid = false;
+      } else if (!isValidEmail(email)) {
+        emailError.textContent = 'Please enter a valid email address';
+        studentEmailInput.classList.add('error');
+        isValid = false;
+      }
+      
+      // Password validation
+      const password = studentPasswordInput.value.trim();
+      if (!password) {
+        passwordError.textContent = 'Password is required';
+        studentPasswordInput.classList.add('error');
+        isValid = false;
+      } else if (password.length < 8) {
+        passwordError.textContent = 'Password must be at least 8 characters';
+        studentPasswordInput.classList.add('error');
+        isValid = false;
+      }
+      
+      if (isValid) {
+        // In a real application, you would send this data to your server
+        // For demo purposes, we'll just show a success message
+        alert('Login successful! Redirecting to your dashboard...');
+        window.location.href = 'dashboard.html';
+      }
+    });
+
+    // Admin Login Form Validation
+    const adminLoginForm = document.getElementById('admin-login');
+    const adminUsernameInput = document.getElementById('admin-username');
+    const adminPasswordInput = document.getElementById('admin-password');
+    const usernameError = document.getElementById('username-error');
+    const adminPasswordError = document.getElementById('admin-password-error');
+
+    adminLoginForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Reset error messages
+      usernameError.textContent = '';
+      adminPasswordError.textContent = '';
+      adminUsernameInput.classList.remove('error');
+      adminPasswordInput.classList.remove('error');
+      
+      let isValid = true;
+      
+      // Username validation
+      const username = adminUsernameInput.value.trim();
+      if (!username) {
+        usernameError.textContent = 'Username is required';
+        adminUsernameInput.classList.add('error');
+        isValid = false;
+      }
+      
+      // Password validation
+      const password = adminPasswordInput.value.trim();
+      if (!password) {
+        adminPasswordError.textContent = 'Password is required';
+        adminPasswordInput.classList.add('error');
+        isValid = false;
+      } else if (password.length < 8) {
+        adminPasswordError.textContent = 'Password must be at least 8 characters';
+        adminPasswordInput.classList.add('error');
+        isValid = false;
+      }
+      
+      if (isValid) {
+        // In a real application, you would send this data to your server
+        alert('Admin login successful! Redirecting to admin dashboard...');
+        window.location.href = 'admin.html';
+      }
+    });
+
+    // Helper function to validate email format
+    function isValidEmail(email) {
+      const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      return re.test(String(email).toLowerCase());
+    }
+
+    // Real-time validation for student email
+    studentEmailInput.addEventListener('input', function() {
+      const email = this.value.trim();
+      if (!email) {
+        emailError.textContent = '';
+        this.classList.remove('error');
+      } else if (!isValidEmail(email)) {
+        emailError.textContent = 'Please enter a valid email address';
+        this.classList.add('error');
+      } else {
+        emailError.textContent = '';
+        this.classList.remove('error');
+      }
+    });
+
+    // Real-time validation for student password
+    studentPasswordInput.addEventListener('input', function() {
+      const password = this.value.trim();
+      if (!password) {
+        passwordError.textContent = '';
+        this.classList.remove('error');
+      } else if (password.length < 8) {
+        passwordError.textContent = 'Password must be at least 8 characters';
+        this.classList.add('error');
+      } else {
+        passwordError.textContent = '';
+        this.classList.remove('error');
+      }
+    });
+
+    // Real-time validation for admin username
+    adminUsernameInput.addEventListener('input', function() {
+      const username = this.value.trim();
+      if (!username) {
+        usernameError.textContent = '';
+        this.classList.remove('error');
+      } else {
+        usernameError.textContent = '';
+        this.classList.remove('error');
+      }
+    });
+
+    // Real-time validation for admin password
+    adminPasswordInput.addEventListener('input', function() {
+      const password = this.value.trim();
+      if (!password) {
+        adminPasswordError.textContent = '';
+        this.classList.remove('error');
+      } else if (password.length < 8) {
+        adminPasswordError.textContent = 'Password must be at least 8 characters';
+        this.classList.add('error');
+      } else {
+        adminPasswordError.textContent = '';
+        this.classList.remove('error');
+      }
+    });
+  </script>
+</body>
+</html>

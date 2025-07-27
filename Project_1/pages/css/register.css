@@ -1,0 +1,354 @@
+ /* Register Page Specific Styles */
+    .register-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: flex-start;
+    }
+    
+    .register-img {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 100%;
+    }
+    
+    .register-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .register-benefits {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(74, 20, 140, 0.9);
+      color: white;
+      padding: 20px;
+    }
+    
+    .register-benefits h3 {
+      margin-bottom: 15px;
+      color: white;
+    }
+    
+    .register-benefits ul {
+      list-style: none;
+    }
+    
+    .register-benefits li {
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 25px;
+    }
+    
+    .register-benefits i {
+      position: absolute;
+      left: 0;
+      top: 4px;
+    }
+    
+    .register-form {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .form-step {
+      display: none;
+    }
+    
+    .form-step.active {
+      display: block;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    
+    .required {
+      color: #e91e63;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    
+    .form-navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--primary-color);
+      color: var(--primary-color);
+    }
+    
+    .btn-outline:hover {
+      background: var(--primary-color);
+      color: white;
+    }
+    
+    .password-strength {
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    .strength-bar {
+      height: 5px;
+      width: 25%;
+      background: #e0e0e0;
+      border-radius: 3px;
+    }
+    
+    .strength-text {
+      font-size: 12px;
+      color: #666;
+    }
+    
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .radio-option {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+    }
+    
+    .radio-option input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    
+    .radio-checkmark {
+      position: absolute;
+      left: 0;
+      top: 2px;
+      height: 18px;
+      width: 18px;
+      background-color: #eee;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+    }
+    
+    .radio-option:hover input ~ .radio-checkmark {
+      background-color: #ccc;
+    }
+    
+    .radio-option input:checked ~ .radio-checkmark {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+    
+    .radio-checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    
+    .radio-option input:checked ~ .radio-checkmark:after {
+      display: block;
+    }
+    
+    .radio-option .radio-checkmark:after {
+      top: 5px;
+      left: 5px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+    }
+    
+    .checkbox-option {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+    }
+    
+    .checkbox-option input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    
+    .checkbox-checkmark {
+      position: absolute;
+      left: 0;
+      top: 2px;
+      height: 18px;
+      width: 18px;
+      background-color: #eee;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+    
+    .checkbox-option:hover input ~ .checkbox-checkmark {
+      background-color: #ccc;
+    }
+    
+    .checkbox-option input:checked ~ .checkbox-checkmark {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+    
+    .checkbox-checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    
+    .checkbox-option input:checked ~ .checkbox-checkmark:after {
+      display: block;
+    }
+    
+    .checkbox-option .checkbox-checkmark:after {
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+    
+    .progress-indicator {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    
+    .progress-step {
+      width: 12px;
+      height: 12px;
+      background: #e0e0e0;
+      border-radius: 50%;
+    }
+    
+    .progress-step.active {
+      background: var(--primary-color);
+    }
+    
+    .membership-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .membership-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    
+    .membership-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .membership-card.recommended {
+      border: 2px solid var(--accent-color);
+    }
+    
+    .recommended-badge {
+      position: absolute;
+      top: -10px;
+      right: 20px;
+      background: var(--accent-color);
+      color: white;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    
+    .membership-card h3 {
+      margin-bottom: 15px;
+      color: var(--primary-color);
+    }
+    
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    
+    .price span {
+      font-size: 14px;
+      font-weight: normal;
+      color: #666;
+    }
+    
+    .membership-card ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+    
+    .membership-card li {
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 25px;
+    }
+    
+    .membership-card i {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      color: var(--primary-color);
+    }
+    
+    .select-option {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+    }
+    
+    .login-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      .register-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .register-img {
+        height: 300px;
+      }
+    }

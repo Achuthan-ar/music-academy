@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Music Academy</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="admin-dashboard">
+  <!-- Admin Header -->
+  <header class="admin-header">
+    <div class="container header-container">
+      <a href="../html/dashboard.html" class="logo">Music<span>Academy</span> Admin</a>
+      <nav>
+        <ul>
+          <li><a href="../html/dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+          <li><a href="../../index.html"><i class="fas fa-home"></i> View Site</a></li>
+          <li><a href="#"><i class="fas fa-bell"></i></a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+          <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Admin Sidebar -->
+  <aside class="admin-sidebar">
+    <div class="admin-profile">
+      <img src="../../assets/images/admin.jpeg" alt="Admin Profile">
+      <h3>Admin User</h3>
+      <p>Super Administrator</p>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#students" class="sidebar-title"><i class="fas fa-users"></i> Students</a>
+          <ul>
+            <li><a href="#">All Students</a></li>
+            <li><a href="#">New Registrations</a></li>
+            <li><a href="#">Student Progress</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#courses" class="sidebar-title"><i class="fas fa-book"></i> Courses</a>
+          <ul>
+            <li><a href="#">All Courses</a></li>
+            <li><a href="#">Add New Course</a></li>
+            <li><a href="#">Course Categories</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#services" class="sidebar-title"><i class="fas fa-concierge-bell"></i> Services</a>
+          <ul>
+            <li><a href="#">All Services</a></li>
+            <li><a href="#">Add New Service</a></li>
+            <li><a href="#">Service Requests</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#centers" class="sidebar-title"><i class="fas fa-map-marker-alt"></i> Centers</a>
+          <ul>
+            <li><a href="#">All Centers</a></li>
+            <li><a href="#">Add New Center</a></li>
+            <li><a href="#">Center Staff</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#shop" class="sidebar-title"><i class="fas fa-shopping-cart"></i> Shop</a>
+          <ul>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Orders</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#reports" class="sidebar-title"><i class="fas fa-chart-bar"></i> Reports</a>
+          <ul>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Enrollments</a></li>
+            <li><a href="#">Revenue</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#settings" class="sidebar-title"><i class="fas fa-cog"></i> Settings</a>
+          <ul>
+            <li><a href="#">System Settings</a></li>
+            <li><a href="#">User Management</a></li>
+            <li><a href="#">Backup</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="admin-main">
+    <div class="admin-container">
+      <h1>Admin Dashboard</h1>
+      
+      <!-- Dashboard Stats -->
+      <div class="dashboard-stats">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="stat-info">
+            <h3>Total Students</h3>
+            <p>1,245</p>
+            <span class="stat-change up"><i class="fas fa-arrow-up"></i> 12% from last month</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="stat-info">
+            <h3>Active Courses</h3>
+            <p>36</p>
+            <span class="stat-change up"><i class="fas fa-arrow-up"></i> 3 new this month</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="stat-info">
+            <h3>Shop Orders</h3>
+            <p>87</p>
+            <span class="stat-change down"><i class="fas fa-arrow-down"></i> 5% from last month</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <div class="stat-info">
+            <h3>Monthly Revenue</h3>
+            <p>$24,567</p>
+            <span class="stat-change up"><i class="fas fa-arrow-up"></i> 8% from last month</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Recent Activity -->
+      <div class="dashboard-section">
+        <h2>Recent Activity</h2>
+        <div class="activity-list">
+          <div class="activity-item">
+            <div class="activity-icon">
+              <i class="fas fa-user-plus"></i>
+            </div>
+            <div class="activity-content">
+              <p><strong>5 new students</strong> registered in the last 24 hours</p>
+              <span class="activity-time">2 hours ago</span>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="activity-content">
+              <p><strong>Violin Pro Course</strong> enrollment reached capacity</p>
+              <span class="activity-time">5 hours ago</span>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="activity-content">
+              <p><strong>New order #4582</strong> for Beginner Guitar Package</p>
+              <span class="activity-time">1 day ago</span>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <div class="activity-content">
+              <p><strong>3 new service requests</strong> for instrument repairs</p>
+              <span class="activity-time">1 day ago</span>
+            </div>
+          </div>
+          <div class="activity-item">
+            <div class="activity-icon">
+              <i class="fas fa-comment"></i>
+            </div>
+            <div class="activity-content">
+              <p><strong>12 new messages</strong> in the support inbox</p>
+              <span class="activity-time">2 days ago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Pending Actions -->
+      <div class="dashboard-section">
+        <h2>Pending Actions</h2>
+        <div class="pending-actions">
+          <div class="pending-card">
+            <h3>New Student Applications</h3>
+            <p>24 applications awaiting review</p>
+            <a href="#" class="btn">Review Applications</a>
+          </div>
+          <div class="pending-card">
+            <h3>Course Enrollment Requests</h3>
+            <p>15 requests for course changes</p>
+            <a href="#" class="btn">Process Requests</a>
+          </div>
+          <div class="pending-card">
+            <h3>Service Approvals</h3>
+            <p>8 instrument service appointments to confirm</p>
+            <a href="#" class="btn">Confirm Appointments</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Quick Actions -->
+      <div class="dashboard-section">
+        <h2>Quick Actions</h2>
+        <div class="quick-actions">
+          <a href="#" class="quick-action">
+            <i class="fas fa-plus-circle"></i>
+            <span>Add New Course</span>
+          </a>
+          <a href="#" class="quick-action">
+            <i class="fas fa-user-edit"></i>
+            <span>Edit Student</span>
+          </a>
+          <a href="#" class="quick-action">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span>Generate Report</span>
+          </a>
+          <a href="#" class="quick-action">
+            <i class="fas fa-bullhorn"></i>
+            <span>Send Announcement</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
